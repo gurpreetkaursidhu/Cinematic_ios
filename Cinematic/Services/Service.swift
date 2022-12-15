@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class Service {
 
     // MARK: - Utility
