@@ -29,7 +29,7 @@ struct Movie: Codable {
         formatter.dateFormat = "dd/MM/yyyy"
         return formatter.string(from: releaseDate ?? Date())
     }
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case posterPath = "poster_path"
@@ -39,6 +39,19 @@ struct Movie: Codable {
         case genres
         case voteAverage = "vote_average"
     }
+}
+    struct MovieViewModel: Codable {
+        var page: Int? = 1
+        var totalPages: Int? = 1
+        var search: String?
+        var movies: [Movie]? = []
+
+        enum CodingKeys: String, CodingKey {
+            case page
+            case totalPages = "total_pages"
+            case search
+            case movies = "results"
+        }
 }
 
 
