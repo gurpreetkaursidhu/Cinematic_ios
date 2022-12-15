@@ -8,4 +8,23 @@
 import UIKit
 
 class ListMoviesViewController: UIViewController ,MoviesViewInteractionLogic {
+    private var viewModel = ListMoviesViewModel()
    
+    
+    // MARK: - Object lifecycle
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        title = viewModel.viewTitle
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        title = viewModel.viewTitle
+    }
+
+
+    // MARK: - Setup
+
+}
+
