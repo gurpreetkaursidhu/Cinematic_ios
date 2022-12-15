@@ -21,6 +21,7 @@
 		1534F0ED294BBA0200075142 /* MovieDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0EC294BBA0200075142 /* MovieDataSource.swift */; };
 		1534F0EF294BBAB500075142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0EE294BBAB500075142 /* AppDelegate.swift */; };
 		1534F0F4294BBC5500075142 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0F3294BBC5500075142 /* TabBarController.swift */; };
+		1534F0F6294BCC3000075142 /* ListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0F5294BCC3000075142 /* ListMoviesViewController.swift */; };
 		A6EB4BCC294A6A070073A4F5 /* CinematicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */; };
 		A6EB4BCE294A6A070073A4F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB4BCD294A6A070073A4F5 /* ContentView.swift */; };
 		A6EB4BD0294A6A090073A4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB4BCF294A6A090073A4F5 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		1534F0EC294BBA0200075142 /* MovieDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataSource.swift; sourceTree = "<group>"; };
 		1534F0EE294BBAB500075142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1534F0F3294BBC5500075142 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1534F0F5294BCC3000075142 /* ListMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesViewController.swift; sourceTree = "<group>"; };
 		A6EB4BC8294A6A070073A4F5 /* Cinematic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinematic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinematicApp.swift; sourceTree = "<group>"; };
 		A6EB4BCD294A6A070073A4F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1534F0F3294BBC5500075142 /* TabBarController.swift */,
+				1534F0F5294BCC3000075142 /* ListMoviesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				1534F0E9294BB95A00075142 /* ShowMovieViewModel.swift in Sources */,
 				A6EB4BD5294A6A090073A4F5 /* Persistence.swift in Sources */,
 				A6EB4BCE294A6A070073A4F5 /* ContentView.swift in Sources */,
+				1534F0F6294BCC3000075142 /* ListMoviesViewController.swift in Sources */,
 				A6EB4BE2294A6E900073A4F5 /* Movie.swift in Sources */,
 				A6EB4BCC294A6A070073A4F5 /* CinematicApp.swift in Sources */,
 				A6EB4BD8294A6A090073A4F5 /* Cinematic.xcdatamodeld in Sources */,
