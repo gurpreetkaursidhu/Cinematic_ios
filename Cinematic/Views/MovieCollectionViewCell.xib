@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviesCollectionViewCell" id="pHE-Fq-uVu" customClass="MoviesCollectionViewCell" customModule="the_movie_db" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tG-Wl-X3h">
+                        <rect key="frame" x="0.0" y="257" width="178" height="26.333333333333314"/>
+                        <string key="text">Teste de título
+200</string>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1g1-fM-LkW">
+                        <rect key="frame" x="0.0" y="0.0" width="178" height="249"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movie-cover" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-Yu-2q5" userLabel="Poster Image" customClass="CustomImageView" customModule="the_movie_db" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="25" width="178" height="249"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="i0P-OP-ilD"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1g1-fM-LkW" firstAttribute="height" secondItem="pHE-Fq-uVu" secondAttribute="height" multiplier="0.83" id="C9m-wY-0Ox"/>
+                <constraint firstItem="1g1-fM-LkW" firstAttribute="top" secondItem="pHE-Fq-uVu" secondAttribute="top" id="CE8-iI-Of8"/>
+                <constraint firstAttribute="trailing" secondItem="1g1-fM-LkW" secondAttribute="trailing" id="HeM-QM-E7s"/>
+                <constraint firstItem="1tG-Wl-X3h" firstAttribute="top" secondItem="1g1-fM-LkW" secondAttribute="bottom" constant="8" id="NYX-nx-LcJ"/>
+                <constraint firstItem="1g1-fM-LkW" firstAttribute="leading" secondItem="pHE-Fq-uVu" secondAttribute="leading" id="R7U-P4-cM8"/>
+                <constraint firstItem="1tG-Wl-X3h" firstAttribute="leading" secondItem="pHE-Fq-uVu" secondAttribute="leading" id="WPI-ay-lIN"/>
+                <constraint firstAttribute="trailing" secondItem="1tG-Wl-X3h" secondAttribute="trailing" id="mLz-F1-ltV"/>
+            </constraints>
+            <size key="customSize" width="232" height="380"/>
+            <connections>
+                <outlet property="titleLabel" destination="1tG-Wl-X3h" id="SzD-9k-6Q0"/>
+                <outlet property="yearLabel" destination="fzn-Le-k9o" id="464-WL-APx"/>
+            </connections>
+            <point key="canvasLocation" x="272.46376811594206" y="249.10714285714283"/>
+        </collectionViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fzn-Le-k9o" userLabel="Year Label">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="13.666666666666666"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-70" y="228"/>
+        </label>
+    </objects>
+    <resources>
+        <image name="movie-cover" width="300" height="450"/>
+    </resources>
+</document>
