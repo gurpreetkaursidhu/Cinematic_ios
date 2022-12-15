@@ -1,14 +1,15 @@
 //
-//  MovieCollectionViewCell.swift
+//  MoviesCollectionViewCell.swift
 //  Cinematic
 //
-//  Created by Gurpreet Kaur on 2022-12-14.
+//  Created by Gurpreet Kaur on 2022-12-15.
 //
 
-import Foundation
+import UIKit
 
 class MoviesCollectionViewCell: UICollectionViewCell {
-
+    
+    
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var yearLabel: UILabel!
     @IBOutlet private weak var posterImage: CustomImageView!
@@ -33,3 +34,6 @@ class MoviesCollectionViewCell: UICollectionViewCell {
         posterImage.loadImageUsing(path: movie.smallPosterPath)
     }
 }
+
+    
+
