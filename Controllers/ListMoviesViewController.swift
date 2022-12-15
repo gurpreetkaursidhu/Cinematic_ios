@@ -46,4 +46,20 @@ class ListMoviesViewController: UIViewController ,MoviesViewInteractionLogic {
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }
+    unc fetchMovies(nextPage: Bool = false) {
+        viewModel.fetchPopularMovies(nextPage: nextPage) { (movieViewModel) in
+            DispatchQueue.main.async {
+                self.moviesView.movies = movieViewModel.movies ?? []
+                self.moviesView.collectionView.reloadData()
+            }
+        }
+    }
+
+    func fetchGenres() {
+        viewModel.fetchGenres { (genres) in
+            DispatchQueue.main.async {
+                // TODO: mostrar filtro de categoria
+            }
+        }
+    }
 }
