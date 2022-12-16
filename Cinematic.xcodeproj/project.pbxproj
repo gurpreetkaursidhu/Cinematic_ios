@@ -25,6 +25,7 @@
 		1534F0F8294BFE7900075142 /* ListMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534F0F7294BFE7900075142 /* ListMovieViewController.xib */; };
 		1534F0FA294BFF5300075142 /* SearchMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0F9294BFF5300075142 /* SearchMoviesViewController.swift */; };
 		1534F0FC294C091F00075142 /* SearchMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534F0FB294C091F00075142 /* SearchMovieViewController.xib */; };
+		15884E29294D17B700F6C093 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15884E28294D17B700F6C093 /* UIColorExtension.swift */; };
 		A6EB4BCC294A6A070073A4F5 /* CinematicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */; };
 		A6EB4BCE294A6A070073A4F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB4BCD294A6A070073A4F5 /* ContentView.swift */; };
 		A6EB4BD0294A6A090073A4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB4BCF294A6A090073A4F5 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		1534F0F7294BFE7900075142 /* ListMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListMovieViewController.xib; sourceTree = "<group>"; };
 		1534F0F9294BFF5300075142 /* SearchMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMoviesViewController.swift; sourceTree = "<group>"; };
 		1534F0FB294C091F00075142 /* SearchMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMovieViewController.xib; sourceTree = "<group>"; };
+		15884E28294D17B700F6C093 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		A6EB4BC8294A6A070073A4F5 /* Cinematic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinematic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinematicApp.swift; sourceTree = "<group>"; };
 		A6EB4BCD294A6A070073A4F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				1534F0D7294AEEA600075142 /* MoviesCollectionViewCell.xib */,
 				1534F0DF294AF1AF00075142 /* CustomImageView.swift */,
 				1534F0E5294AF3EA00075142 /* MoviesView.xib */,
+				15884E28294D17B700F6C093 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,7 +172,6 @@
 				1534F0B6294ADD1C00075142 /* Views */,
 				A6EB4BE6294B06060073A4F5 /* Controller */,
 				A6EB4BE3294B057B0073A4F5 /* ViewModels */,
-				A6EB4BDE294A6E570073A4F5 /* Models */,
 				1534F0AD294ACBF700075142 /* Services */,
 				A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */,
 				A6EB4BCD294A6A070073A4F5 /* ContentView.swift */,
@@ -294,6 +296,7 @@
 				A6EB4BE5294B05A40073A4F5 /* ListMoviesViewModel.swift in Sources */,
 				1534F0B3294ACF2C00075142 /* Service.swift in Sources */,
 				1534F0CD294AE7C300075142 /* JSONDecoderExtension.swift in Sources */,
+				15884E29294D17B700F6C093 /* UIColorExtension.swift in Sources */,
 				1534F0F4294BBC5500075142 /* TabBarController.swift in Sources */,
 				1534F0D4294AEE0A00075142 /* MoviesCollectionViewCell.swift in Sources */,
 				1534F0E9294BB95A00075142 /* ShowMovieViewModel.swift in Sources */,
