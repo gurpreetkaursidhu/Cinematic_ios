@@ -27,6 +27,19 @@ class SearchMoviesViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
-   
+    func fetchMovies(search: String, nextPage: Bool = false) {
+        viewModel.fetchMovies(search: search, nextPage: nextPage) { (movieViewModel) in
+            DispatchQueue.main.async {
+                self.moviesView.movies = movieViewModel.movies ?? []
+                self.moviesView.collectionView.reloadData()
+            }
+        }
+    }
+
+    func displayMovieDetail(movie: Movie) {
+        let controller = ShowMovieViewController(with: movie)
+        guard let navigation = viewModel.sender.navigationController else { return }
+        navigation.pushViewController(controller, animated: true)
+    }
 
 }
