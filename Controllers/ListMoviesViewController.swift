@@ -11,7 +11,7 @@ class ListMoviesViewController: UIViewController ,MoviesViewInteractionLogic {
 
     private var viewModel = ListMoviesViewModel()
 
-   
+    @IBOutlet private weak var moviesView: MoviesView!
     
     // MARK: - Object lifecycle
 
