@@ -7,13 +7,14 @@
 
 import UIKit
 
-class SearchMoviesViewController: UIViewController {
+class SearchMoviesViewController: UIViewController, MoviesViewInteractionLogic, UISearchResultsUpdating  {
 
-    override func viewDidLoad() {
-       
-       
-    }
-    
+    private var viewModel = SearchMoviesViewModel()
+
+    @IBOutlet private weak var moviesView: MoviesView!
+
+    // MARK: - Object lifecycle
+
     init(sender: UIViewController) {
         super.init(nibName: nil, bundle: nil)
         self.viewModel.sender = sender
@@ -27,6 +28,15 @@ class SearchMoviesViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
+
+    // MARK: - Setup
+
+    func setup() {
+        moviesView.viewController = self
+    }
+
+    // MARK: - Display
+
     func fetchMovies(search: String, nextPage: Bool = false) {
         viewModel.fetchMovies(search: search, nextPage: nextPage) { (movieViewModel) in
             DispatchQueue.main.async {
@@ -42,6 +52,8 @@ class SearchMoviesViewController: UIViewController {
         navigation.pushViewController(controller, animated: true)
     }
 
+    // MARK: - Search
+
     func updateSearchResults(for searchController: UISearchController) {
         NSObject.cancelPreviousPerformRequests(withTarget: self)
         perform(#selector(search(text:)), with: (searchController.searchBar.text ?? ""), afterDelay: 1)
@@ -52,7 +64,9 @@ class SearchMoviesViewController: UIViewController {
             fetchMovies(search: text)
         }
     }
-    
+
+    // MARK: - Movies View Interaction Logic
+
     func didSelect(movie: Movie) {
         DispatchQueue.main.async {
             self.displayMovieDetail(movie: movie)
@@ -70,3 +84,7 @@ class SearchMoviesViewController: UIViewController {
         moviesView.collectionView.refreshControl?.endRefreshing()
     }
 }
+
+
+
+
