@@ -24,6 +24,7 @@
 		1534F0F6294BCC3000075142 /* ListMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0F5294BCC3000075142 /* ListMoviesViewController.swift */; };
 		1534F0F8294BFE7900075142 /* ListMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534F0F7294BFE7900075142 /* ListMovieViewController.xib */; };
 		1534F0FA294BFF5300075142 /* SearchMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534F0F9294BFF5300075142 /* SearchMoviesViewController.swift */; };
+		1534F0FC294C091F00075142 /* SearchMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534F0FB294C091F00075142 /* SearchMovieViewController.xib */; };
 		A6EB4BCC294A6A070073A4F5 /* CinematicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */; };
 		A6EB4BCE294A6A070073A4F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB4BCD294A6A070073A4F5 /* ContentView.swift */; };
 		A6EB4BD0294A6A090073A4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EB4BCF294A6A090073A4F5 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		1534F0F5294BCC3000075142 /* ListMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesViewController.swift; sourceTree = "<group>"; };
 		1534F0F7294BFE7900075142 /* ListMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListMovieViewController.xib; sourceTree = "<group>"; };
 		1534F0F9294BFF5300075142 /* SearchMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMoviesViewController.swift; sourceTree = "<group>"; };
+		1534F0FB294C091F00075142 /* SearchMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMovieViewController.xib; sourceTree = "<group>"; };
 		A6EB4BC8294A6A070073A4F5 /* Cinematic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinematic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EB4BCB294A6A070073A4F5 /* CinematicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinematicApp.swift; sourceTree = "<group>"; };
 		A6EB4BCD294A6A070073A4F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				1534F0F5294BCC3000075142 /* ListMoviesViewController.swift */,
 				1534F0F7294BFE7900075142 /* ListMovieViewController.xib */,
 				1534F0F9294BFF5300075142 /* SearchMoviesViewController.swift */,
+				1534F0FB294C091F00075142 /* SearchMovieViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				A6EB4BD3294A6A090073A4F5 /* Preview Assets.xcassets in Resources */,
 				1534F0E6294AF3EA00075142 /* MoviesView.xib in Resources */,
 				A6EB4BD0294A6A090073A4F5 /* Assets.xcassets in Resources */,
+				1534F0FC294C091F00075142 /* SearchMovieViewController.xib in Resources */,
 				1534F0F8294BFE7900075142 /* ListMovieViewController.xib in Resources */,
 				1534F0D8294AEEA600075142 /* MoviesCollectionViewCell.xib in Resources */,
 			);
