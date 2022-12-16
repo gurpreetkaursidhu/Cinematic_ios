@@ -42,4 +42,14 @@ class SearchMoviesViewController: UIViewController {
         navigation.pushViewController(controller, animated: true)
     }
 
+    func updateSearchResults(for searchController: UISearchController) {
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
+        perform(#selector(search(text:)), with: (searchController.searchBar.text ?? ""), afterDelay: 1)
+    }
+
+    @objc func search(text: String) {
+        if !text.isEmpty {
+            fetchMovies(search: text)
+        }
+    }
 }
