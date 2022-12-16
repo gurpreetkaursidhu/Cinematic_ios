@@ -10,9 +10,9 @@ import Foundation
 class ShowMovieViewModel {
 
     var movie = Movie()
-    let movieService = MovieService()
-    let movieDataSource = MovieDataSource()
-    var isFavorite = false
+        let movieService = MovieService()
+        let movieDataSource = MovieDataSource()
+        var isFavorite = false
 }
 
 // MARK: - Requests
@@ -34,7 +34,7 @@ extension ShowMovieViewModel {
             }
         }
     }
-
+// fetch movie data
     func checkFavorite(completion: @escaping (Movie) -> ()) {
         movieDataSource.fetchMovie(movie: movie) { (movie, dataSourceError) in
             if dataSourceError != nil {
@@ -48,7 +48,7 @@ extension ShowMovieViewModel {
             completion(self.movie)
         }
     }
-
+// while adding favourite
     func tougleIsfavorite(completion: @escaping (Movie) -> ()) {
         if isFavorite {
             movieDataSource.removeMovie(movie: movie) { (movie, dataSourceError) in
@@ -71,3 +71,4 @@ extension ShowMovieViewModel {
         }
     }
 }
+// save data
