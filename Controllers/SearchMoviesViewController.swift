@@ -52,4 +52,21 @@ class SearchMoviesViewController: UIViewController {
             fetchMovies(search: text)
         }
     }
+    
+    func didSelect(movie: Movie) {
+        DispatchQueue.main.async {
+            self.displayMovieDetail(movie: movie)
+        }
+    }
+
+    func loadMoreData() {
+        DispatchQueue.main.async {
+            guard let search = self.viewModel.movieViewModel.search else { return }
+            self.fetchMovies(search: search, nextPage: true)
+        }
+    }
+
+    func refreshContent() {
+        moviesView.collectionView.refreshControl?.endRefreshing()
+    }
 }
